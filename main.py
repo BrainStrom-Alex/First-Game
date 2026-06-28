@@ -29,3 +29,18 @@ if condition == "left":
     print("You've come to a lake. There is an island in the middle of the lake.")
     print("   Type 'wait' to wait for a boat. Type 'swim' to swim across.")
     con2 = input("")
+
+    if con2 == "wait":
+        print("You arrive at the island unharmed. There is a house with 3 doors.")
+        print(" One red, one yellow and one blue. Which colour do you choose?")
+        con3 = input("")
+        if con3 == "blue":
+            print("ou enter a room of beasts. Game Over.")
+        elif con3 == "yellow":
+            print("You Win")
+        elif con3 == "red":
+            print("Burned by fire. Game Over.")
+        else:
+            print("Game Over")
+    else:
+        print("Attacked by trout. Game Over.")
