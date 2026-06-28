@@ -44,3 +44,5 @@ if condition == "left":
             print("Game Over")
     else:
         print("Attacked by trout. Game Over.")
+else:
+    print("Fall into a hole. Game Over.")
