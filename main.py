@@ -1,4 +1,4 @@
-print(r'''
+print('''
 *******************************************************************************
           |                   |                  |                     |
  _________|________________.=""_;=.______________|_____________________|_______
@@ -9,7 +9,7 @@ print(r'''
 |                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
 |___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
           |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
- _________|___________| ;`-.o`"=._; ." ` '`."\ ` . "-._ /_______________|_______
+ _________|___________| ;`-.o`"=._; ." ` '`." ` . "-._ /_______________|_______
 |                   | |o ;    `"-.o`"=._``  '` " ,__.--o;   |
 |___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
 ____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
@@ -24,18 +24,18 @@ print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 print("You're at a cross road. Where do you want to go?")
 print('     Type "left" or "right"')
-condition = input("")
+condition = input("").lower()
 if condition == "left":
     print("You've come to a lake. There is an island in the middle of the lake.")
     print('   Type "wait" to wait for a boat. Type "swim" to swim across.')
-    con2 = input("")
+    con2 = input("").lower()
 
     if con2 == "wait":
         print("You arrive at the island unharmed. There is a house with 3 doors.")
         print(" One red, one yellow and one blue. Which colour do you choose?")
-        con3 = input("")
+        con3 = input("").lower()
         if con3 == "blue":
-            print("ou enter a room of beasts. Game Over.")
+            print("You enter a room of beasts. Game Over.")
         elif con3 == "yellow":
             print("You Win")
         elif con3 == "red":
